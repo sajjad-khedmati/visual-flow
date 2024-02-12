@@ -10,10 +10,11 @@ export default function AddNewOrganization(): React.ReactNode {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Hint side="right" align="center" label="create new organization">
-          <Button
-            size={"icon"}
-            className="
+        <div className="">
+          <Hint side="right" align="center" label="create new organization">
+            <Button
+              size={"icon"}
+              className="
       flex 
       aspect-square 
       cursor-pointer 
@@ -27,10 +28,11 @@ export default function AddNewOrganization(): React.ReactNode {
     hover:bg-violet-800/60 
       hover:ring-violet-800
       active:scale-95"
-          >
-            <Plus className="size-6 text-violet-300" />
-          </Button>
-        </Hint>
+            >
+              <Plus className="size-6 text-violet-300" />
+            </Button>
+          </Hint>
+        </div>
       </DialogTrigger>
       <DialogContent className="max-w-[480px] border-none bg-transparent p-0">
         <CreateOrganization />
