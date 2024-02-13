@@ -30,7 +30,7 @@ export default function SearchBar(): JSX.Element {
   }, [value, router]);
 
   return (
-    <div className="relative max-w-[560px] flex-1">
+    <div className="relative hidden max-w-[560px] flex-1 lg:block">
       <Search className="absolute inset-y-1/2 left-2 size-4 -translate-y-1/2" />
       <Input
         className="pl-9 outline-none focus:ring-0"

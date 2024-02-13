@@ -14,6 +14,7 @@ export default function OrganizationsList(): JSX.Element | null {
       {userMemberships?.data.map((memberShip) => (
         <OrganizationItem
           key={memberShip.id}
+          id={memberShip.organization.id}
           imageUrl={memberShip.organization.imageUrl}
           name={memberShip.organization.name}
         />
