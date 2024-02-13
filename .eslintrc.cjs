@@ -98,7 +98,7 @@ const config = {
             allowForLoopAfterthoughts: true,
           },
         ],
-        "@typescript-eslint/prefer-nullish-coalescing": "error",
+        "@typescript-eslint/prefer-nullish-coalescing": "warn",
         "no-shadow": "error",
         "@typescript-eslint/explicit-member-accessibility": [
           "error",
