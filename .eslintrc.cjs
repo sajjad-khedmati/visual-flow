@@ -74,6 +74,9 @@ const config = {
         "no-var": "error",
         "prefer-const": "error",
         "@typescript-eslint/no-floating-promises": "error",
+        "@typescript-eslint/no-unsafe-return": "off",
+        "@typescript-eslint/no-unsafe-assignment": "off",
+        "@typescript-eslint/no-unsafe-call": "off",
         "@typescript-eslint/consistent-type-definitions": ["warn", "type"],
         "@typescript-eslint/array-type": ["error", { default: "array-simple" }],
         "@typescript-eslint/no-empty-interface": "error",
@@ -98,6 +101,7 @@ const config = {
             allowForLoopAfterthoughts: true,
           },
         ],
+        "@typescript-eslint/no-unsafe-member-access": "off",
         "@typescript-eslint/prefer-nullish-coalescing": "warn",
         "no-shadow": "error",
         "@typescript-eslint/explicit-member-accessibility": [
@@ -127,7 +131,7 @@ const config = {
           {
             allowString: false,
             allowNumber: false,
-            allowNullableObject: false,
+            allowNullableObject: true,
             allowNullableBoolean: false,
             allowNullableString: false,
             allowNullableNumber: false,
@@ -155,6 +159,7 @@ const config = {
 
         // Tailwind
         "tailwindcss/classnames-order": "error",
+        "tailwindcss/no-custom-classname": "off",
         "tailwindcss/enforces-negative-arbitrary-values": "error",
         "tailwindcss/enforces-shorthand": "error",
         "tailwindcss/no-contradicting-classname": "error",

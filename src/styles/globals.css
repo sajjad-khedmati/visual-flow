@@ -9,3 +9,7 @@ body,
   height: 100vh;
   overflow: hidden;
 }
+
+.page-container {
+  @apply p-2 md:px-4 lg:px-6;
+}

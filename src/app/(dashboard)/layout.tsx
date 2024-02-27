@@ -1,6 +1,6 @@
 import React from "react";
 import Sidebar from "./_components/sidebar";
-import OrganizationsSide from "./_components/org-side";
+import OrganizationsSide from "./_components/sidebar/org-side";
 import Navbar from "./_components/navbar";
 
 type DashboardLayoutProps = {
